@@ -8,6 +8,7 @@ export default function Player() {
 
   const onSubmitName = () => {
     setEnteredPlayerName(playerName.current.value);
+    playerName.current.value = '';
   };
 
   return (

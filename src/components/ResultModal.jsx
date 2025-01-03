@@ -9,7 +9,7 @@ const ResultModal = forwardRef(function ResultModal(
   const userLost = remainingTime <= 0;
   const formattedTime = (remainingTime / 1000).toFixed(2);
 
-  const score = Math.round((1 - remainingTime / (targetTime * 1000)) * 100);
+  const score = Math.round((1 - remainingTime / (targetTime * 1000)) * 50);
 
   const dialog = useRef();
   useImperativeHandle(ref, () => {
